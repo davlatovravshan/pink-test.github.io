@@ -1,0 +1,208 @@
+.banner__full
+	display: flex
+	flex-direction: column
+	text-align: center
+	align-items: center
+	margin: 60px 0px
+	max-width: 350px
+	position: relative
+	z-index: 5 
+
+.banner__title
+	font-size: 48px
+	line-height: 50px
+	letter-spacing: 0.1em
+	font-weight: 300
+	color: #fff
+
+
+.banner__btn
+	background: inherit
+	margin-top: 40px
+	padding: 8px 20px
+	border: #fff solid 2px
+	border-radius: 30px
+	color: #fff
+	font-size: 20px
+	font-weight: 500
+	&:hover
+		background: #fff
+		color: #d22856
+		transition: all 0.1s ease-in
+
+.banner__img
+	margin: 60px auto 0 auto
+	display: flex
+
+	.icon__img
+		padding: 0 15px
+
+.banner__text
+	margin: 45px
+	color: #fff
+	font-size: 16px
+	font-weight: 300
+
+.banner__iphone
+	position: absolute
+	top: 25%
+	right: 18%
+	bottom: 0
+	z-index: 1
+	.banner__iphone-img
+		height: 500px
+		width: 470px
+
+.banner__full-xs
+	display: none
+
+
+//**************МЕДИА ЗАПРОСЫ*******************//
+
+
+
+//************ЭКРАН 992px*******************//
+
+@media(max-width: 992px)
+
+	.banner__full
+		margin-left: 50px
+
+	.banner__title
+		font-size: 38px
+
+
+
+	.banner__iphone
+		position: absolute
+		top: 20%
+		right: 10%
+		bottom: 0
+		z-index: 1
+		.banner__iphone-img
+			height: 482px
+			width: 450px
+
+	.banner__text
+		margin: 30px
+
+	.banner__img
+		margin: 50px auto 0 auto
+
+
+//************ЭКРАН 768px*******************//
+
+@media (max-width: 769px)
+
+	.banner__title
+		font-size: 44px
+
+	.banner__full
+		margin: 100px 0
+
+	.banner__text
+		margin-bottom: 50px
+
+	.banner__iphone
+		position: absolute
+		top: 19%
+		right: 5%
+		bottom: 0
+		z-index: 1
+		.banner__iphone-img
+			height: 570px
+			width: 460px
+
+	.banner__btn
+		padding: 10px 40px
+		font-size: 24px
+		border: solid #fff 4px
+
+	.banner__iphone--closed
+		top: 44%
+		right: 3%
+		bottom: 0
+		z-index: 1
+		.banner__iphone-img--closed
+			height: 557px
+			width: 460px
+
+
+//************ЭКРАН 576px*******************//
+
+@media (max-width: 576px)
+
+	.banner__full
+		display: none
+
+	.banner__full-xs
+		display: block
+		text-align: center
+		padding: 0px
+		background: #1d2631
+		max-width: 100%
+		.banner__img-xs
+			justify-content: center
+			margin: 30px 0
+			.icon__img
+				padding: 0 15px
+		.banner__text-xs
+			margin: 45px
+			color: #fff
+			font-size: 16px
+			font-weight: 300
+			padding-bottom: 30px 
+
+	.banner__iphone
+		position: relative
+		margin-top: 30px
+		.banner__iphone-img
+			width: 470px
+			height: 570px
+
+
+@media(max-width: 474px)
+	.banner__iphone
+		position: relative
+		margin-top: 30px
+		.banner__iphone-img
+			width: 370px
+			height: 470px
+
+	.banner__img-xs
+		justify-content: center
+		margin: 20px 0
+		.icon__img
+			padding: 0 10px
+	.banner__text-xs
+		margin: 25px
+		color: #fff
+		font-size: 12px
+		font-weight: 300
+		padding-bottom: 20px 
+
+	.banner__btn
+		padding: 8px 35px
+		font-size: 20px
+		border: solid #fff 4px
+
+@media(max-width: 394px)
+	.banner__iphone
+		position: relative
+		margin-top: 30px
+		.banner__iphone-img
+			width: 300px
+			height: 400px
+
+@media(max-width: 350px)
+	.banner__full-xs
+		.banner__text-xs
+			margin: 25px
+			color: #fff
+			font-size: 14px
+			padding-bottom: 20px 
+
+	.banner__btn
+		padding: 6px 30px
+		font-size: 18px
+		border: solid #fff 4px

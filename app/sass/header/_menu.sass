@@ -1,0 +1,225 @@
+
+/******ФОН МЕНЮ******/
+.header__black-bg
+	margin: 0
+	padding: 20px 0
+	background: #283645
+	background: rgba(#000, 0.4)
+
+/******СКРЫТИЕ ЭЛЕМЕНТОВ МОБИЛКИ******/
+.header__nav-btn
+	display: none
+
+.header__menu-btn
+	display: none
+
+/******ФОН МЕНЮ******/
+.header__row
+	justify-content: space-between
+	align-items: center
+
+.header__nav
+	display: flex
+	margin-top: 20px 
+
+.menu__list
+	display: flex
+
+.menu__item
+	list-style: none
+	padding: 0 35px
+
+.menu__link
+	color: #fff
+	font-size: 18px
+	padding-bottom: 7px
+	transition: all 0.001s 
+	transition: all 0.001s ease
+	&:hover
+		text-decoration: none
+		transition: all 0.001s ease
+		color: #d02856
+
+.menu-btn-xs
+	display: inline-block
+	.menu-xs-img1
+		display: none
+
+
+
+//***************МЕДИА ЗАПРОСЫ*************//
+
+
+@media (max-width: 992px)
+
+	.header__black-bg
+		padding: 10px
+
+	.menu__item
+		padding: 0 20px
+
+	.menu__link
+		font-size: 16px
+
+
+/******************ЭКРАН 769px*************************/
+
+
+@media (max-width: 769px)
+
+	.header__black-bg
+		padding: 20px 0 
+	
+	.header__logo
+		padding-left: 25px
+
+	.header__black--x
+		background: #283645
+		padding-bottom: 0
+
+	.menu-btn::before
+		content: ''
+		background-image: url('/app/img/menu-btn.png') 
+		background-size: cover
+		width: 50px
+		height: 50px
+		display: inline-block
+		margin-right: 20px
+		cursor: pointer
+		transition: all .1s ease
+
+	.header__btn--closed::before
+		content: ''
+		background-image: url('/app/img/menu-x.png') 
+		background-size: cover
+		width: 30px
+		height: 30px
+		display: block
+		margin-right: 20px
+		cursor: pointer
+		transition: all .1s ease
+
+	.header__nav
+		display: none
+
+
+	.header__nav--closed
+		width: 100%
+		display: block
+		margin: 0
+		margin-top: 20px
+		padding: 0
+
+
+	.menu__list
+		margin: 0
+		display: flex
+		width: 100%
+		flex-direction: column
+		padding: 0
+
+	.menu__item
+		background: #283645
+		list-style: none
+		border-bottom: 2px #222 inset
+		padding: 20px 0px
+		text-align: center
+		transition: all 0.1s ease
+		&:hover
+			opacity: .5
+			cursor: pointer
+			transition: all 0.1s ease
+		&:first-child
+			border-top: solid #222 2px
+
+	.menu__link
+		color: #fff
+		font-size: 20px
+		&:hover
+			color: #fff
+			opacity: .4
+
+
+/*****************ЭКРАН 576px********************/
+
+
+@media (max-width: 576px)
+	
+	.menu-btn::before
+		content: ''
+		background-image: url('/app/img/menu-btn.png') 
+		background-size: cover
+		width: 45px
+		height: 45px
+		margin-right: 20px
+		cursor: pointer
+		transition: all .1s ease
+
+	.header__btn--closed::before
+		content: ''
+		background-image: url('/app/img/menu-x.png') 
+		background-size: cover
+		width: 30px
+		height: 30px
+		margin-right: 20px
+		cursor: pointer
+		transition: all .1s ease
+
+@media(max-width: 474px)
+	
+	.menu-btn::before
+		content: ''
+		background-image: url('/app/img/menu-btn.png') 
+		background-size: cover
+		width: 40px
+		height: 40px
+		margin-right: 20px
+		cursor: pointer
+		transition: all .1s ease
+
+	.header__btn--closed::before
+		content: ''
+		background-image: url('/app/img/menu-x.png') 
+		background-size: cover
+		width: 25px
+		height: 25px
+		margin-right: 20px
+		cursor: pointer
+		transition: all .1s ease
+
+	.menu__item
+		padding: 15px 0
+
+	.menu__link
+		font-size: 18px
+
+
+@media(max-width: 400px)
+	.menu__item
+		padding: 12px 0
+
+	.menu__link
+		font-size: 16px
+
+
+@media(max-width: 445px)
+	
+	.menu-btn::before
+		content: ''
+		background-image: url('/app/img/menu-btn.png') 
+		background-size: cover
+		width: 35px
+		height: 35px
+		margin-right: 20px
+		cursor: pointer
+		transition: all .1s ease
+
+	.header__btn--closed::before
+		content: ''
+		background-image: url('/app/img/menu-x.png') 
+		background-size: cover
+		width: 20px
+		height: 20px
+		margin-right: 20px
+		cursor: pointer
+		transition: all .1s ease
